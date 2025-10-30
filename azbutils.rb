@@ -5,21 +5,21 @@
 class Azbutils < Formula
   desc "gsutil-like CLI for Azure Blob Storage."
   homepage "https://github.com/orionnectar/homebrew-tools"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/orionnectar/go-azbutils/releases/download/v0.1.5/azbutils_darwin_amd64.tar.gz"
-      sha256 "fb34d099229597871e0b1cd65c67383d28fcd0df01763e72e7d31eed38ecc367"
+      url "https://github.com/orionnectar/go-azbutils/releases/download/v0.1.6/azbutils_darwin_amd64.tar.gz"
+      sha256 "c13dfe0118a3ba373581154044c178c960507fb7b89fadb3b555b2181edbbf92"
 
       def install
         bin.install "azbutils"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/orionnectar/go-azbutils/releases/download/v0.1.5/azbutils_darwin_arm64.tar.gz"
-      sha256 "e620a8b40646198668213bdbbd0c551987382271cb7e599ae75c0889aa81bfce"
+      url "https://github.com/orionnectar/go-azbutils/releases/download/v0.1.6/azbutils_darwin_arm64.tar.gz"
+      sha256 "21bd6f1c3ba576c528c4431e8cd60006e402b660a67581d00c3d6e4b943a2c1a"
 
       def install
         bin.install "azbutils"
@@ -29,15 +29,15 @@ class Azbutils < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/orionnectar/go-azbutils/releases/download/v0.1.5/azbutils_linux_amd64.tar.gz"
-      sha256 "cb2f157bb7da8bef0433852d8b51561fbf1ab6cbf19504bfdf69d0a0505e89c9"
+      url "https://github.com/orionnectar/go-azbutils/releases/download/v0.1.6/azbutils_linux_amd64.tar.gz"
+      sha256 "28452480cbce1cb293265d0701213d5277dd09283156adcaf73f6713715c60db"
       def install
         bin.install "azbutils"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/orionnectar/go-azbutils/releases/download/v0.1.5/azbutils_linux_arm64.tar.gz"
-      sha256 "a3d09e0af71170d10ded53bcbb577fb778373d48adf7029b18c0e9fd18bcb55e"
+      url "https://github.com/orionnectar/go-azbutils/releases/download/v0.1.6/azbutils_linux_arm64.tar.gz"
+      sha256 "d7acdc93e62f4ae0eb697b6b702a4f230fddbf3e90c1ccab15e167147bdf870a"
       def install
         bin.install "azbutils"
       end
